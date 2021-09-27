@@ -1,0 +1,52 @@
+class program {
+
+void regresa(){
+turnleft();
+turnleft();
+while(frontIsClear){
+move();
+}
+while(anyBeepersInBeeperBag){
+putbeeper();
+}
+}
+
+void recoge(){
+while(nextToABeeper){
+pickbeeper();
+}
+}
+
+
+void amontona(){
+while(nextToABeeper && frontIsClear){
+recoge();
+move();
+if(frontIsBlocked && notNextToABeeper){
+  recoge();
+  regresa();
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+program() {
+    ;
+  amontona();
+   regresa();
+   recoge();
+    turnoff();
+}
+
+}

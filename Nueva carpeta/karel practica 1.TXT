@@ -1,0 +1,19 @@
+class program {
+ void recoge(){
+ while(NextToAbeeper){
+pickbepper();
+
+ void amontona(){
+ while(nextToAbeeper && frontisclear){
+ recoge();
+ move();
+
+ }
+program() {
+    ;
+   amontona();
+
+    turnoff();
+}
+
+}
